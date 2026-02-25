@@ -1,6 +1,3 @@
-// Página de detalhes — renderizada no servidor (SSR)
-export const dynamic = "force-dynamic";
-
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -25,6 +22,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { formatDate, getYouTubeEmbedUrl } from "@/lib/utils";
 import type { Launch } from "@/types/launch";
+
+// Força renderização dinâmica no servidor a cada requisição (SSR)
+export const dynamic = "force-dynamic";
 
 interface LaunchDetailData {
   launch: Launch;

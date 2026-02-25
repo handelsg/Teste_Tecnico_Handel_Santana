@@ -1,10 +1,10 @@
-// Página Inicial — renderizada no servidor (SSR)
-export const dynamic = "force-dynamic";
-
 import { createApolloClient } from "@/lib/apollo-client";
 import { GET_LATEST_LAUNCHES } from "@/lib/queries";
 import { HeroSection } from "@/components/HeroSection";
 import type { Launch } from "@/types/launch";
+
+// Força renderização dinâmica no servidor a cada requisição (SSR)
+export const dynamic = "force-dynamic";
 
 interface HomeData {
   launches: Launch[];

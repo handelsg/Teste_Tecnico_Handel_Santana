@@ -134,9 +134,9 @@ npm run test:watch
 **Cobertura dos testes unitários:**
 - `StatusBadge` — 6 casos: todos os status (sucesso, falha, próximo, desconhecido), prioridade de `upcoming`
 - `LaunchCard` — 8 casos: renderização de nome, foguete, status, local, link, detalhes, ausência de patch, missão futura
-- `utils` — 12 casos: `formatDate`, `formatDateShort`, `getLaunchStatus`, `getYouTubeEmbedUrl`, `cn`
+- `utils` — 14 casos: `formatDate`, `formatDateShort`, `getLaunchStatus`, `getYouTubeEmbedUrl`, `cn`
 
-**Total: 26 testes passando ✅**
+**Total: 28 testes passando ✅**
 
 ### Testes E2E (Cypress)
 
